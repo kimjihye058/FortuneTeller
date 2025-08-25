@@ -36,8 +36,15 @@
             this.lbBirthDay = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbResult = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.상담내역불러오기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.포츈텔러정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -47,16 +54,16 @@
             this.groupBox1.Controls.Add(this.tbBirthDay);
             this.groupBox1.Controls.Add(this.lbBirthTime);
             this.groupBox1.Controls.Add(this.lbBirthDay);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 43);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(346, 426);
+            this.groupBox1.Size = new System.Drawing.Size(346, 395);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "사용자 입력";
             // 
             // btResult
             // 
-            this.btResult.Location = new System.Drawing.Point(22, 293);
+            this.btResult.Location = new System.Drawing.Point(19, 278);
             this.btResult.Name = "btResult";
             this.btResult.Size = new System.Drawing.Size(303, 52);
             this.btResult.TabIndex = 4;
@@ -65,14 +72,14 @@
             // 
             // tbBirthTime
             // 
-            this.tbBirthTime.Location = new System.Drawing.Point(22, 160);
+            this.tbBirthTime.Location = new System.Drawing.Point(19, 145);
             this.tbBirthTime.Name = "tbBirthTime";
             this.tbBirthTime.Size = new System.Drawing.Size(100, 21);
             this.tbBirthTime.TabIndex = 3;
             // 
             // tbBirthDay
             // 
-            this.tbBirthDay.Location = new System.Drawing.Point(22, 75);
+            this.tbBirthDay.Location = new System.Drawing.Point(19, 60);
             this.tbBirthDay.Name = "tbBirthDay";
             this.tbBirthDay.Size = new System.Drawing.Size(100, 21);
             this.tbBirthDay.TabIndex = 2;
@@ -80,7 +87,7 @@
             // lbBirthTime
             // 
             this.lbBirthTime.AutoSize = true;
-            this.lbBirthTime.Location = new System.Drawing.Point(20, 124);
+            this.lbBirthTime.Location = new System.Drawing.Point(17, 109);
             this.lbBirthTime.Name = "lbBirthTime";
             this.lbBirthTime.Size = new System.Drawing.Size(161, 12);
             this.lbBirthTime.TabIndex = 1;
@@ -89,7 +96,7 @@
             // lbBirthDay
             // 
             this.lbBirthDay.AutoSize = true;
-            this.lbBirthDay.Location = new System.Drawing.Point(20, 48);
+            this.lbBirthDay.Location = new System.Drawing.Point(17, 33);
             this.lbBirthDay.Name = "lbBirthDay";
             this.lbBirthDay.Size = new System.Drawing.Size(145, 12);
             this.lbBirthDay.TabIndex = 0;
@@ -98,21 +105,70 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tbResult);
-            this.groupBox2.Location = new System.Drawing.Point(364, 12);
+            this.groupBox2.Location = new System.Drawing.Point(364, 43);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(424, 426);
+            this.groupBox2.Size = new System.Drawing.Size(424, 395);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "결과";
             // 
             // tbResult
             // 
-            this.tbResult.Location = new System.Drawing.Point(19, 21);
+            this.tbResult.Location = new System.Drawing.Point(19, 20);
             this.tbResult.Multiline = true;
             this.tbResult.Name = "tbResult";
             this.tbResult.ReadOnly = true;
-            this.tbResult.Size = new System.Drawing.Size(388, 387);
+            this.tbResult.Size = new System.Drawing.Size(388, 358);
             this.tbResult.TabIndex = 0;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.파일ToolStripMenuItem,
+            this.도움말ToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // 파일ToolStripMenuItem
+            // 
+            this.파일ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.상담내역불러오기ToolStripMenuItem,
+            this.끝내기ToolStripMenuItem});
+            this.파일ToolStripMenuItem.Name = "파일ToolStripMenuItem";
+            this.파일ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.파일ToolStripMenuItem.Text = "파일";
+            // 
+            // 상담내역불러오기ToolStripMenuItem
+            // 
+            this.상담내역불러오기ToolStripMenuItem.Name = "상담내역불러오기ToolStripMenuItem";
+            this.상담내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.상담내역불러오기ToolStripMenuItem.Text = "상담 내역 불러오기";
+            this.상담내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.상담내역불러오기ToolStripMenuItem_Click);
+            // 
+            // 끝내기ToolStripMenuItem
+            // 
+            this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.끝내기ToolStripMenuItem.Text = "끝내기";
+            this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
+            // 
+            // 도움말ToolStripMenuItem
+            // 
+            this.도움말ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.포츈텔러정보ToolStripMenuItem});
+            this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.도움말ToolStripMenuItem.Text = "도움말";
+            // 
+            // 포츈텔러정보ToolStripMenuItem
+            // 
+            this.포츈텔러정보ToolStripMenuItem.Name = "포츈텔러정보ToolStripMenuItem";
+            this.포츈텔러정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.포츈텔러정보ToolStripMenuItem.Text = "포츈텔러 정보";
+            this.포츈텔러정보ToolStripMenuItem.Click += new System.EventHandler(this.포츈텔러정보ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -121,7 +177,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.RightToLeftLayout = true;
@@ -130,7 +188,10 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -144,6 +205,12 @@
         private System.Windows.Forms.TextBox tbBirthDay;
         private System.Windows.Forms.Label lbBirthTime;
         private System.Windows.Forms.TextBox tbResult;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 파일ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 상담내역불러오기ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 끝내기ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 포츈텔러정보ToolStripMenuItem;
     }
 }
 
