@@ -16,5 +16,6 @@ namespace FortuneTeller
         {
             InitializeComponent();
         }
+
     }
 }
