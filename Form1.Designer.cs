@@ -35,7 +35,9 @@
             this.lbBirthTime = new System.Windows.Forms.Label();
             this.lbBirthDay = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbResult = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -95,12 +97,22 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tbResult);
             this.groupBox2.Location = new System.Drawing.Point(364, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(424, 426);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "결과";
+            // 
+            // tbResult
+            // 
+            this.tbResult.Location = new System.Drawing.Point(19, 21);
+            this.tbResult.Multiline = true;
+            this.tbResult.Name = "tbResult";
+            this.tbResult.ReadOnly = true;
+            this.tbResult.Size = new System.Drawing.Size(388, 387);
+            this.tbResult.TabIndex = 0;
             // 
             // Form1
             // 
@@ -116,6 +128,8 @@
             this.Text = "포츈텔러 3103김지혜";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -129,6 +143,7 @@
         private System.Windows.Forms.TextBox tbBirthTime;
         private System.Windows.Forms.TextBox tbBirthDay;
         private System.Windows.Forms.Label lbBirthTime;
+        private System.Windows.Forms.TextBox tbResult;
     }
 }
 
