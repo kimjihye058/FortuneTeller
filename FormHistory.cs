@@ -45,7 +45,7 @@ namespace FortuneTeller
 
         }
 
-        private void UpdateHistory()
+        public void UpdateHistory()
         {
             LoadHistory();
             lbHistory.Items.Clear();
