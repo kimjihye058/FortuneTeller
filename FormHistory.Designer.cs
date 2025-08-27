@@ -40,6 +40,7 @@
             this.btnRefresh.TabIndex = 0;
             this.btnRefresh.Text = "내역 새로고침";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // lbHistory
             // 
