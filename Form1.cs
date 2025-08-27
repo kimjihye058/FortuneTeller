@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,10 +13,13 @@ namespace FortuneTeller
 {
     public partial class Form1 : Form
     {
+        List<string> results;
+
         public Form1()
         {
             InitializeComponent();
         }
+
 
         private void 상담내역불러오기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
