@@ -52,7 +52,7 @@ namespace FortuneTeller
             }
             else             
             {
-                form = new FormHistory();
+                form = new FormHistory(this);
                 form.Show();
             }
         }
@@ -106,6 +106,19 @@ namespace FortuneTeller
             {
                 MessageBox.Show($"알 수 없는 오류가 발생했습니다.\n{ex.Message}", "알 수 없는 오류!");
             }
+        }
+
+        internal void LoadHistory(string history)
+        {
+            string birthDay = history.Split('|')[0].Split(' ')[0];
+            tbBirthDay.Text = birthDay;
+            string birthTime = history.Split('|')[0].Split(' ')[1];
+            tbBirthTime.Text = birthTime;
+            string saju = history.Split('|')[1];
+            string message = history.Split('|')[2];
+            tbResult.Text = birthDay + " " + birthTime + "시" + Environment.NewLine
+                + saju + Environment.NewLine
+                + message;
         }
     }
 }
