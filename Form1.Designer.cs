@@ -69,6 +69,7 @@
             this.btResult.TabIndex = 4;
             this.btResult.Text = "사주 결과 보기";
             this.btResult.UseVisualStyleBackColor = true;
+            this.btResult.Click += new System.EventHandler(this.btResult_Click);
             // 
             // tbBirthTime
             // 
@@ -144,14 +145,14 @@
             // 상담내역불러오기ToolStripMenuItem
             // 
             this.상담내역불러오기ToolStripMenuItem.Name = "상담내역불러오기ToolStripMenuItem";
-            this.상담내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.상담내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.상담내역불러오기ToolStripMenuItem.Text = "상담 내역 불러오기";
             this.상담내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.상담내역불러오기ToolStripMenuItem_Click);
             // 
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
@@ -166,7 +167,7 @@
             // 포츈텔러정보ToolStripMenuItem
             // 
             this.포츈텔러정보ToolStripMenuItem.Name = "포츈텔러정보ToolStripMenuItem";
-            this.포츈텔러정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.포츈텔러정보ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.포츈텔러정보ToolStripMenuItem.Text = "포츈텔러 정보";
             this.포츈텔러정보ToolStripMenuItem.Click += new System.EventHandler(this.포츈텔러정보ToolStripMenuItem_Click);
             // 
